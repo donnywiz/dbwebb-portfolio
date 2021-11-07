@@ -54,7 +54,14 @@ a:hover, .nav > a:active {
   width: 65%;
   /* border-left:1px solid grey;
   border-right:1px solid grey; */
+}
 
+.content img {
+  width: 400px;
+  padding: 2em;
+  border-radius: 10px;
+  border:1px solid lightgrey;
+  background-color: whitesmoke;
 }
 
 .header, .footer {
