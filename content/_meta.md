@@ -1,8 +1,8 @@
 ---
-Logo: image/leaf_256x256.png
-Tagline: My portfolio.
+Logo: image/me.png
+Tagline: @davs21
 Social:
-    - title: Link till sidans github repo.
-      url: https://github.com/dbwebb-se/design-v3
+    - title: Link to GitHub.
+      url: https://github.com/donnywiz/dbwebb-portfolio/
       icon: github
 ---
