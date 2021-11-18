@@ -3,7 +3,7 @@ $font-alternative-color: #fff;
 $accent-color: #ee6c4d;
 $background-color: #fff;
 $background-alternative-color: #e0fbfc;
-$fa-font-path: "/../../node_modules/@fortawesome/fontawesome-free/webfonts";
+$fa-font-path: '/../../node_modules/@fortawesome/fontawesome-free/webfonts';
 
 @mixin theme {
     display: flex;
