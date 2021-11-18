@@ -3,6 +3,10 @@
 @import 'blockquotes';
 @import 'code';
 @import 'fonts';
+@import 'placement';
+@import 'header';
+@import 'footer';
+@import 'typography';
 
 body {
     background-color: $background-color;
@@ -31,80 +35,6 @@ body {
     font-family: 'PT Serif', serif;
 }
 
-/* Placement */
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-}
-
-a:link,
-a:visited {
-    text-decoration: none;
-    color: #000;
-}
-
-a:hover,
-.nav > a:active {
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #6da;
-    text-decoration-thickness: 2px;
-}
-
-.nav {
-    display: flex;
-    font-weight: 600;
-}
-
-.main {
-    display: flex;
-    flex: 1 0 auto;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em 0 2em;
-}
-
-.content {
-    align-items: flex-start;
-    width: 65%;
-}
-
-.content img {
-    width: 400px;
-    padding: 2em;
-    border-radius: 10px;
-    border: 1px solid #d3d3d3; // lightgrey
-    background-color: #f5f5f5; // whitesmoke
-}
-
-.header,
-.footer {
-    display: flex;
-    flex: 0 0 auto;
-}
-
-/* Header */
-
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    // border-bottom: 1px solid #f5f5f5; // whitesmoke
-}
-
-.header {
-    display: flex;
-    width: 65%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 0;
-}
-
-.site-header {
-    display: flex;
-}
 
 /* Title */
 .logo {
@@ -161,71 +91,4 @@ a:hover,
 
 .title p {
     font-style: italic;
-}
-
-/* Footer */
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    min-height: 150px;
-    /* border-top: 1px solid lightsteelblue; */
-    padding: 4em;
-    background-color: #789; // lightslategrey
-    color: #b0c4de; // lightsteelblue
-    padding: 2em;
-}
-
-.footer a {
-    color: #fff;
-    /* color: #222; */
-}
-
-.footer .social {
-    font-size: 2rem;
-
-}
-
-/* Typografy */
-
-body {
-    line-height: 1.5rem;
-    color: #444;
-}
-
-p,
-td,
-th,
-li,
-dd {
-    text-align: justify;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    /* margin-bottom: 0.6em; */
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-weight: bold;
-    font-family: 'Inter', Helvetica, sans-serif;
-}
-
-.header {
-    font-family: 'Inter', Helvetica, sans-serif;
-}
-
-.footer {
-    color: #b0c4de; //lightsteelblue
-    font-family: 'Inter', Helvetica, sans-serif;
-    font-size: 1rem;
-}
-
-img {
-    max-width: 100%;
 }

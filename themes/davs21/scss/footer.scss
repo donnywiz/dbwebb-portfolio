@@ -1,0 +1,22 @@
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    /* border-top: 1px solid lightsteelblue; */
+    padding: 4em;
+    background-color: #789; // lightslategrey
+    color: #b0c4de; // lightsteelblue
+    padding: 2em;
+}
+
+.footer a {
+    color: #fff;
+    /* color: #222; */
+}
+
+.footer .social {
+    font-size: 2rem;
+
+}
