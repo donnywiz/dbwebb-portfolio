@@ -5,10 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap");
-@import "/../../shared/css/font-awsome.min.css";
 html {
   line-height: 1.15;
   /* 1 */
@@ -354,6 +350,7 @@ code {
   border: 1px solid #ccc;
   border-radius: 0.3em;
   background: #f5f5f5;
+  font-family: monospace;
   font-size: 0.85rem;
   line-height: 1.9824;
 }
@@ -366,7 +363,6 @@ pre {
 }
 
 pre code {
-  font-family: "IBM Plex Mono", monospace;
   display: block;
   margin: 0;
   padding: 1.1111em 0;
@@ -376,233 +372,10 @@ pre code {
   line-height: 1.4;
 }
 
-/* Placement */
 body {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #000;
-}
-
-a:hover,
-.nav > a:active {
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #6da;
-  text-decoration-thickness: 2px;
-}
-
-.nav {
-  display: flex;
-  font-weight: 600;
-}
-
-.main {
-  display: flex;
-  flex: 1 0 auto;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em 0 2em;
-}
-
-.content {
-  align-items: flex-start;
-  width: 65%;
-}
-
-.content img {
-  width: 400px;
-  padding: 2em;
-  border-radius: 10px;
-  border: 1px solid #d3d3d3;
-  background-color: #f5f5f5;
-}
-
-.header,
-.footer {
-  display: flex;
-  flex: 0 0 auto;
-}
-
-/* Header */
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-}
-
-.header {
-  display: flex;
-  width: 65%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1em 0;
-}
-
-.site-header {
-  display: flex;
-}
-
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  min-height: 150px;
-  /* border-top: 1px solid lightsteelblue; */
-  padding: 4em;
-  background-color: #789;
-  color: #b0c4de;
-  padding: 2em;
-}
-
-.footer a {
-  color: #fff;
-  /* color: #222; */
-}
-
-.footer .social {
-  font-size: 2rem;
-}
-
-/* Typography */
-body {
-  line-height: 1.5rem;
-  color: #444;
-}
-
-p,
-td,
-th,
-li,
-dd {
-  text-align: justify;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* margin-bottom: 0.6em; */
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-weight: bold;
-  font-family: "Inter", Helvetica, sans-serif;
-}
-
-.header {
-  font-family: "Inter", Helvetica, sans-serif;
-}
-
-.footer {
-  color: #b0c4de;
-  font-family: "Inter", Helvetica, sans-serif;
-  font-size: 1rem;
-}
-
-img {
-  max-width: 100%;
-}
-
-/* font-awesome */
-i.fas,
-i.fa {
-  font-size: 1em;
-}
-
-body {
-  background-color: #fff;
-  color: #000;
+  background-color: #3d5a80;
 }
 
 * {
-  box-sizing: border-box;
-  border: 0 none;
-  margin: 0;
-  padding: 0;
-}
-
-ol,
-ul {
-  padding-left: 1.5em;
-}
-
-.hidden {
-  display: none !important;
-}
-
-html,
-body {
-  height: 100%;
-  font-family: "PT Serif", serif;
-}
-
-/* Title */
-.logo {
-  display: flex;
-  align-items: center;
-  padding: 0 1em 0 0;
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-.title h1 {
-  padding-bottom: 0.25em;
-  margin: 0;
-}
-.title p {
-  padding: 0;
-  margin: 0;
-}
-
-.title-small {
-  display: none;
-  font-size: 0.5em;
-}
-
-.logo img {
-  height: 100px;
-}
-
-@media (max-width: 1300px) {
-  .header {
-    flex-flow: column;
-    padding: 1em 1em 1em 0;
-  }
-}
-@media (max-width: 767px) {
-  .title-small {
-    display: flex;
-  }
-
-  .site-header {
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .title,
-.logo {
-    display: none;
-    padding: 1em 1em 1em 0;
-  }
-}
-.title * {
-  color: #111;
-}
-
-.title p {
-  font-style: italic;
+  color: #000;
 }
