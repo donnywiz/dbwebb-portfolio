@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap");
-@import "/../../shared/css/font-awsome.min.css";
+@import '/../../shared/css/font-awsome.min.css';
 html {
   line-height: 1.15;
   /* 1 */
@@ -513,9 +513,54 @@ img {
 }
 
 /* font-awesome */
-i.fas,
-i.fa {
-  font-size: 1em;
+/* grid layout for content */
+.landingpage {
+  display: grid;
+  gap: 1em 1em;
+}
+
+.landingpage h2,
+.landingpage h3 {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.kmom-box.project {
+  grid-column: span 3;
+}
+
+/* Variables and colors for layout */
+/* grid layout for tech content */
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 50px repeat(4, 200px);
+  gap: 1em 1em;
+  border: 1px solid blue;
+  padding: 2em;
+}
+
+.grid h1,
+.grid h2,
+.grid h3 {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  border: 1px solid pink;
+}
+
+.tech-box {
+  display: flex;
+  justify-content: center;
+  border: 1px solid pink;
+  box-shadow: 2px 2px 0 whitesmoke;
+}
+
+.tech-box.project {
+  display: flex;
+  grid-column: span 3;
+  border: 1px solid pink;
 }
 
 body {
