@@ -20,6 +20,26 @@ a:hover,
     text-decoration-thickness: 2px;
 }
 
+.grid-main a {
+    color: var(--body-link);
+    font-family: var(--body-sans-serif);
+    font-weight: bold;
+}
+
+.grid-main a:link,
+.grid-main a:visited {
+    text-decoration: none;
+    color: var(--body-link);
+}
+
+.grid-main a:hover,
+.grid-main > a:active {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--body-link-decoration);
+    text-decoration-thickness: 2px;
+}
+
 .nav {
     display: flex;
     font-weight: 600;

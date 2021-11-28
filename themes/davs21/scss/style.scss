@@ -10,7 +10,8 @@
 @import 'font-awesome';
 @import 'report';
 @import 'colors';
-@import 'tech';
+@import 'tech-landingpage';
+@import 'tech-content';
 @import '/../../shared/css/font-awsome.min.css';
 
 body {
@@ -23,6 +24,7 @@ body {
     border: 0 none;
     margin: 0;
     padding: 0;
+
 }
 
 ol,
@@ -37,7 +39,7 @@ ul {
 html,
 body {
     height: 100%;
-    font-family: 'PT Serif', serif;
+    font-family: var(--body-serif);
 }
 
 

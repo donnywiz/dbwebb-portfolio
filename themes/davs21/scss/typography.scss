@@ -9,10 +9,12 @@ p,
 td,
 th,
 li,
+ol,
 dd {
     text-align: justify;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    max-width: 100%;
 }
 
 h1,
@@ -25,16 +27,16 @@ h6 {
     padding-top: 1em;
     padding-bottom: 1em;
     font-weight: bold;
-    font-family: 'Inter', Helvetica, sans-serif;
+    font-family: var(--headlines-sans-serif);
 }
 
 .header {
-    font-family: 'Inter', Helvetica, sans-serif;
+    font-family: var(--headlines-sans-serif);
 }
 
 .footer {
     color: #b0c4de; //lightsteelblue
-    font-family: 'Inter', Helvetica, sans-serif;
+    font-family: var(--body-sans-serif);
     font-size: 1rem;
 }
 

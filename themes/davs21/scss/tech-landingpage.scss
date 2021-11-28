@@ -1,0 +1,45 @@
+.grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em 1em;
+    padding: 1em;
+}
+
+.grid h1,
+.grid h2,
+.grid h3 {
+    grid-column: span 3;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.tech-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    min-width: 150px;
+    background-color: var(--bgcolor-tech-box);
+    box-shadow: 5px 5px var(--tech-box-shadow);
+    font-family: var(--body-sans-serif);
+}
+
+.tech-box.project {
+    display: flex;
+    grid-column: span 3;
+}
+
+//
+// @media (max-width: 1300px) {
+//     .tech-box {
+//     }
+// }
+//
+//
+// @media (max-width: 767px) {
+//     .tech-box {
+//         grid-column: span 3;
+//     }
+// }

@@ -6,6 +6,7 @@ code {
     background: #f5f5f5;
     font-size: 0.85rem;
     line-height: 1.9824;
+    word-wrap: break-word;
 }
 
 pre {
@@ -13,15 +14,16 @@ pre {
     border: 1px solid #ccc;
     border-radius: 0.3em;
     background: #f5f5f5;
+    overflow: auto;
+    max-width: 100%;
 }
 
 pre code {
-    font-family: 'IBM Plex Mono', monospace;
-    display: block;
+    font-family: var(--pre-code);
     margin: 0;
     padding: 1.1111em 0;
     border: 0 none;
     background: transparent;
-    overflow-x: auto;
     line-height: 1.4;
+    white-space: pre;
 }
