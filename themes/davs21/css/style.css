@@ -356,6 +356,7 @@ code {
   background: #f5f5f5;
   font-size: 0.85rem;
   line-height: 1.9824;
+  word-wrap: break-word;
 }
 
 pre {
@@ -363,17 +364,26 @@ pre {
   border: 1px solid #ccc;
   border-radius: 0.3em;
   background: #f5f5f5;
+  overflow: auto;
+  max-width: 100%;
 }
 
 pre code {
-  font-family: "IBM Plex Mono", monospace;
-  display: block;
+  font-family: var(--pre-code);
   margin: 0;
   padding: 1.1111em 0;
   border: 0 none;
   background: transparent;
-  overflow-x: auto;
   line-height: 1.4;
+  white-space: pre;
+}
+
+:root {
+  --body-serif: "PT Serif", serif;
+  --body-sans-serif: "Inter", Helvetica, sans-serif;
+  --headlines-serif: "PT Serif", serif;
+  --headlines-sans-serif: "Inter", Helvetica, sans-serif;
+  --pre-code: "IBM Plex Mono", monospace;
 }
 
 /* Placement */
@@ -394,6 +404,26 @@ a:hover,
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: #6da;
+  text-decoration-thickness: 2px;
+}
+
+.grid-main a {
+  color: var(--body-link);
+  font-family: var(--body-sans-serif);
+  font-weight: bold;
+}
+
+.grid-main a:link,
+.grid-main a:visited {
+  text-decoration: none;
+  color: var(--body-link);
+}
+
+.grid-main a:hover,
+.grid-main > a:active {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--body-link-decoration);
   text-decoration-thickness: 2px;
 }
 
@@ -479,10 +509,12 @@ p,
 td,
 th,
 li,
+ol,
 dd {
   text-align: justify;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  max-width: 100%;
 }
 
 h1,
@@ -495,16 +527,16 @@ h6 {
   padding-top: 1em;
   padding-bottom: 1em;
   font-weight: bold;
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: var(--headlines-sans-serif);
 }
 
 .header {
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: var(--headlines-sans-serif);
 }
 
 .footer {
   color: #b0c4de;
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: var(--body-sans-serif);
   font-size: 1rem;
 }
 
@@ -530,14 +562,20 @@ img {
 }
 
 /* Variables and colors for layout */
-/* grid layout for tech content */
+:root {
+  --bgcolor-tech-box: #f8f8ff;
+  --tech-box-shadow: #f5f5f5;
+  --color-tech-box: #f9f9f9;
+  --body-link: #6200ee;
+  --body-link-decoration: #cfb2f9;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 50px repeat(4, 200px);
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1em 1em;
-  border: 1px solid blue;
-  padding: 2em;
+  padding: 1em;
 }
 
 .grid h1,
@@ -547,22 +585,89 @@ img {
   display: flex;
   align-items: center;
   justify-self: center;
-  border: 1px solid pink;
 }
 
 .tech-box {
   display: flex;
   justify-content: center;
-  border: 1px solid pink;
-  box-shadow: 2px 2px 0 whitesmoke;
+  align-items: center;
+  min-height: 150px;
+  min-width: 150px;
+  background-color: var(--bgcolor-tech-box);
+  box-shadow: 5px 5px var(--tech-box-shadow);
+  font-family: var(--body-sans-serif);
 }
 
 .tech-box.project {
   display: flex;
   grid-column: span 3;
-  border: 1px solid pink;
 }
 
+.grid-two-cols {
+  display: grid;
+  max-width: 100%;
+  width: 65%;
+  grid-template-columns: 1fr 4fr;
+  gap: 1em 1em;
+  align-content: baseline;
+  align-self: center;
+}
+
+.grid-sidebar h1,
+.grid-sidebar h2,
+.grid-sidebar h3 {
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+}
+
+.grid-sidebar {
+  align-self: baseline;
+}
+
+.grid-sidebar ul {
+  list-style: none;
+  font-family: var(--headlines-sans-serif);
+  font-weight: bolder;
+}
+
+.grid-main {
+  align-self: baseline;
+  overflow: auto;
+}
+
+.grid-main h1 {
+  margin-top: 0;
+}
+
+.grid-main-link {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .grid-two-cols {
+    width: 65%;
+  }
+}
+@media (max-width: 767px) {
+  .grid-two-cols {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .grid-sidebar {
+    display: none;
+  }
+
+  .grid-main {
+    grid-column: span 2;
+  }
+
+  .grid-main-link {
+    display: flex;
+  }
+}
 body {
   background-color: #fff;
   color: #000;
@@ -587,7 +692,7 @@ ul {
 html,
 body {
   height: 100%;
-  font-family: "PT Serif", serif;
+  font-family: var(--body-serif);
 }
 
 /* Title */

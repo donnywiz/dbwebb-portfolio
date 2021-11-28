@@ -1,0 +1,32 @@
+{% include 'incl/header.twig' %}
+
+<body>
+
+    {% include 'incl/nav.twig' %}
+
+    <div class="main grid-two-cols" role="main">
+
+        <div class="grid-sidebar">
+            <ul>
+                {% for page in pages("technology") %}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="grid-main">
+            {{ content }}
+
+        <div class="grid-main-link">
+            <p>
+                <a href="javascript:history.back()">Go Back</a>
+            </p>
+        </div>
+
+        </div>
+    </div>
+
+    {% include 'incl/footer.twig' %}
+</body>
+
+</html>
