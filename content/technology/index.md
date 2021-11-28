@@ -1,15 +1,13 @@
 ---
 Title: Tech
-Description: Summar of technologies used
+Description: Summary of technologies used
 Template: technologies
 ---
 
-## Tech
+## Technologies
 
 <div class="tech-box">
-    <div class="tech-box-content">
       <a href="technology/css">CSS</a>
-    </div>
 </div>
 
 <div class="tech-box">
@@ -17,7 +15,7 @@ Template: technologies
 </div>
 
 <div class="tech-box">
-    <a href="technology/Html">Html</a>
+    <a href="technology/Html">HTML</a>
 </div>
 
 <div class="tech-box">
