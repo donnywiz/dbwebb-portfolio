@@ -12,7 +12,7 @@
 @import 'colors';
 @import 'tech-landingpage';
 @import 'tech-content';
-@import 'font-awesome';
+@import '/../../shared/css/font-awsome.min.css';
 
 body {
     background-color: $background-color;
@@ -98,4 +98,8 @@ body {
 
 .title p {
     font-style: italic;
+}
+
+.main {
+    background-color: yellow;
 }
