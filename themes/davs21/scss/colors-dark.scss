@@ -9,15 +9,15 @@ Variables and colors for dark theme.
     --tech-box-shadow: #f5f5f5; //whitsmoke
     --color-tech-box: #f9f9f9;
     --body-font-color: #d2d2d2;
-    --body-link: #6200ee; //green
-    --body-link-decoration: #f7a694; //salmon
+    --body-link: var(--spring-frost); //green
+    --body-link-decoration: var(--spring-frost); //salmon
 
     /* header */
 
     /* main */
     --main-font-color: #d2d2d2;
     --main-font-alternative-color: #fff;
-    --main-accent-color: #f7a694;
+    --main-accent-color: var(--spring-frost);
     --main-background-color: #1f1b24; //darkgrey
     --main-background-alternative-color: #e0fbfc;
     --code-background-color: #121212;
@@ -26,12 +26,19 @@ Variables and colors for dark theme.
 
     /* footer */
     --footer-background-color: #121212; // darkgrey
-    --footer-link-color: #fff; // purple
+    --footer-link-color: var(--ivory); // ivory
 
     /* content img */
-    --img-border-color: #d3d3d3; // lightgrey
-    --img-background-color: #000; // black
+    --img-border-color: var(--spring-frost);
+    --img-background-color: var(--ivory);
 
     /* table */
     --table-background-color: var(--img-background-color);
+
+    /* color theme */
+    --xiketic: #060923ff;
+    --blue-pantone: #0820a8ff;
+    --blue: #0226f0ff;
+    --spring-frost: #8cff21ff;
+    --ivory: #f7feecff;
 }

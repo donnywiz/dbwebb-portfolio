@@ -395,7 +395,7 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
-  color: var(--body-link-decoration);
+  color: var(--body-link);
 }
 
 #nav a:link,
@@ -12935,13 +12935,13 @@ Variables and colors for dark theme.
   --tech-box-shadow: #f5f5f5;
   --color-tech-box: #f9f9f9;
   --body-font-color: #d2d2d2;
-  --body-link: #6200ee;
-  --body-link-decoration: #f7a694;
+  --body-link: var(--spring-frost);
+  --body-link-decoration: var(--spring-frost);
   /* header */
   /* main */
   --main-font-color: #d2d2d2;
   --main-font-alternative-color: #fff;
-  --main-accent-color: #f7a694;
+  --main-accent-color: var(--spring-frost);
   --main-background-color: #1f1b24;
   --main-background-alternative-color: #e0fbfc;
   --code-background-color: #121212;
@@ -12949,12 +12949,18 @@ Variables and colors for dark theme.
   --box-border-color: #fff;
   /* footer */
   --footer-background-color: #121212;
-  --footer-link-color: #fff;
+  --footer-link-color: var(--ivory);
   /* content img */
-  --img-border-color: #d3d3d3;
-  --img-background-color: #000;
+  --img-border-color: var(--spring-frost);
+  --img-background-color: var(--ivory);
   /* table */
   --table-background-color: var(--img-background-color);
+  /* color theme */
+  --xiketic: #060923ff;
+  --blue-pantone: #0820a8ff;
+  --blue: #0226f0ff;
+  --spring-frost: #8cff21ff;
+  --ivory: #f7feecff;
 }
 
 .header {
