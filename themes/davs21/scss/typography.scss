@@ -2,7 +2,7 @@
 
 body {
     line-height: 1.5rem;
-    color: #444;
+    color: var(--body-font-color);
 }
 
 p,
@@ -37,6 +37,10 @@ h6 {
 .footer {
     font-family: var(--body-sans-serif);
     font-size: 1rem;
+}
+
+.footer a {
+    color: var(--footer-link-color);
 }
 
 img {

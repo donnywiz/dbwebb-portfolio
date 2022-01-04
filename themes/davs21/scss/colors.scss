@@ -1,9 +1,32 @@
-/* Variables and colors for layout */
 
 :root {
     --bgcolor-tech-box: #f8f8ff; //ghostwhite
     --tech-box-shadow: #f5f5f5; //whitsmoke
     --color-tech-box: #f9f9f9;
+    --body-font-color: #444;
     --body-link: #6200ee; //purple
-    --body-link-decoration: #cfb2f9; //lightpurple
+    --body-link-decoration: #1d28f2; //blue
+
+    /* header */
+
+    /* main */
+    --main-font-color: #000;
+    --main-font-alternative-color: #fff;
+    --main-accent-color: #f7a694;
+    --main-background-color: #f2f6fc; //lightgrey
+    --main-background-alternative-color: #e0fbfc;
+    --code-background-color: #e9ecef;
+    --code-font-color: #000;
+    --box-border-color: #1d28f2;
+
+    /* footer */
+    --footer-background-color: #e9ecef; // lightgrey
+    --footer-link-color: #050a59;
+
+    /* content img */
+    --img-border-color: #fff; // lightgrey
+    --img-background-color: #e9ecef; // whitesmoke
+
+    /* table */
+    --table-background-color: var(--main-background-color);
 }

@@ -9,14 +9,28 @@
 @import 'typography';
 @import 'font-awesome';
 @import 'report';
-@import 'colors';
 @import 'tech-landingpage';
 @import 'tech-content';
 @import 'font-awesome';
+@import 'colors';
+
+.header {
+    background-color: var(--main-background-color);
+    color: (--main-font-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    padding: 2em;
+    background-color: var(--footer-background-color);
+    color: var(--footer-link-color);
+
+}
 
 body {
-    background-color: $background-color;
-    color: $font-color;
+    background-color: var(--main-background-color);
+    color: (--main-font-color);
 }
 
 * {
@@ -93,7 +107,7 @@ body {
 }
 
 .title * {
-    color: #111;
+    color: (--main-font-color);
 }
 
 .title p {

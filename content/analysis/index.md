@@ -1,40 +1,19 @@
 ---
-Title: Analysis
-Description: Analysis of websites
+Title: Rapporter
+Description: Summary of technologies used
+Template: technologies
 ---
 
+## Rapporter
 
-Titel på rapporten
-=======================
+<div class="tech-box">
+    <a href="analysis/01_colors">Colors</a>
+</div>
 
-Skriv en eller två rader om vad uppgiften handlar om.
+<div class="tech-box">
+    <a href="analysis/02_load">Load</a>
+</div>
 
-Urval
------------------------
-
-Berätta vilka webbplatser du valt att undersöka och varför eller hur du gick tillväga när du gjorde ditt urval.
-
-Metod
------------------------
-
-Berätta kort om din "metod", hur du gör för att utföra undersökningen. Berätta om du använder något speciellt verktyg.
-
-Resultat
------------------------
-
-Dokumentera dina resultat från din studie. Berätta vad du kom fram till, vilka resultat du hittade och observerade.
-
-Analys
------------------------
-
-Diskutera och analysera de resultaten du fann.
-
-Referenser
------------------------
-
-Ange de eventuella referenser du använder dig av, om några.
-
-Övrigt
------------------------
-
-Skriv ditt eget namn samt vilka gruppmedlemmar som deltog i att författa rapporten.
+<div class="tech-box">
+    <a href="analysis/03_deisgn_principles">Design principles</a>
+</div>
