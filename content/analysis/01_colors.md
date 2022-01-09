@@ -83,8 +83,6 @@ Den avskalade bakgrunden gör att innehållet istället lyfts fram. Stort fokus 
 #### Lykke kaffegårdar
 Lykke skapar en färgstark grafisk profil som nästan anspelar lite på grafitti eller text skriven med tuschpenna. Känslan är lekfull, hipp, och lättsam. En del handlar säkert om branding och sticka ut ur mängden, en annan att skapa en stark identitet.
 
-Diskutera och analysera de resultaten du fann.
-
 Referenser
 -----------------------
 * George, James, and Jason Beaird. , 'The Principles of Beautiful Web Design, SitePoint, 2014.
