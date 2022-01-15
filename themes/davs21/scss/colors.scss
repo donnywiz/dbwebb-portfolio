@@ -6,6 +6,7 @@
     --body-font-color: #444;
     --body-link: var(--blue); // blue
     --body-link-decoration: var(--blue); //blue
+    --accent-link-color: var(--blue);
 
     /* header */
 
@@ -13,7 +14,8 @@
     --main-font-color: #000;
     --main-font-alternative-color: #fff;
     --main-accent-color: var(--blue-pantone);
-    --main-background-color: #f2f6fc; //lightgrey
+    // --main-background-color: #f2f6fc; //lightgrey
+    --main-background-color: #fffffe; //lightgrey
     --main-background-alternative-color: #e0fbfc;
     --code-background-color: #e9ecef;
     --code-font-color: #000;

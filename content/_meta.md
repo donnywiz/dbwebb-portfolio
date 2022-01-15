@@ -1,5 +1,5 @@
 ---
-Logo: assets/img/me.png
+Logo: image/me.png?save-as=jpg&h=200&w=200&q=85
 Tagline: @davs21
 Social:
     - title: Link to GitHub.

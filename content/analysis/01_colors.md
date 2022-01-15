@@ -54,17 +54,18 @@ Primär färg, orange. Olika toner av orange används för att markera länkar, 
 Akromatiskt färgschema med vit bakgrund, svart text och gråa inslag för t.ex. footer eller avdelare mitt på sidan för att markera videos etc. 5 kolumner, gridy layout. Varje avsnittet är uppdelat i fleboxes. Innehållet är ojämnt fördelat dvs sällan grupperat i lika delar dvs varje kolumn utan ofast 2, 2.5, 3, osv.
 
 
-![Hodinkee grid](%assets_url%/img/hodinkee_screenshot.png "Hodinkee"){.pic}
+![Hodinkee grid](../image/hodinkee_screenshot.png?save-as=jpg&h=600&w=600&q=85 "Hodinkee skärmdump"){.pic}
 
 <br><br>
 
 #### Lykke kaffegårdar
 Tetradiskt färgschema (3-färger), vit bakgrund. Färgerna är placerade i en triangel i färghjulet vilket är väldigt tydligt på deras förpackning för produkten "BAM". Webbplatsen följer framförallt två färger: rött och blått. Texten varierar mellan svart och blå för att markera olika avsnitt av hemsidan. 4-kolumner grid layout.
 
+![BAM](../image/bam_screenshot.png?save-as=jpg&h=600&w=600&q=85 "BAM skärmdump"){.pic}
 
-![BAM](%assets_url%/img/bam_screenshot.png "BAM"){.pic}
 
 <br><br>
+
 
 
 Analys

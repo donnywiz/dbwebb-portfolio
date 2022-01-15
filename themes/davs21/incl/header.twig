@@ -14,14 +14,23 @@
     <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
 
-    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
-    <link rel="stylesheet" href="{{ theme_url }}/css/mobile-menu.css" type="text/css" />
-
     {% if config.session.theme == "dark" %}
     <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
     {% else %}
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
     {% endif %}
+
+
+    <style>
+      @import url('https://fonts.googleapis.com/  css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+      @import url('https://fonts.googleapis.com/  css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+      @import url('https://fonts.googleapis.com/  css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+    </style>
+
+    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
+    <link rel="stylesheet" href="{{ theme_url }}/css/mobile-menu.css" type="text/css" />
 
     <script defer src="{{ themes_url }}/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
 </head>

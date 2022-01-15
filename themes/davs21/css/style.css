@@ -5,9 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -407,10 +404,11 @@ a:visited {
   color: var(--body-link-decoration);
 }
 #nav a:hover {
+  color: var(--accent-link-color);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: var(--body-link-decoration);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
 }
 
 a:hover {
@@ -442,7 +440,8 @@ a:hover {
 
 .nav {
   display: flex;
-  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.2px;
 }
 
 .main {
@@ -455,7 +454,7 @@ a:hover {
 
 .content {
   align-items: flex-start;
-  width: 65%;
+  width: 45vw;
 }
 
 .content img {
@@ -12936,12 +12935,13 @@ readers do not read off random characters that represent icons */
   --body-font-color: #444;
   --body-link: var(--blue);
   --body-link-decoration: var(--blue);
+  --accent-link-color: var(--blue);
   /* header */
   /* main */
   --main-font-color: #000;
   --main-font-alternative-color: #fff;
   --main-accent-color: var(--blue-pantone);
-  --main-background-color: #f2f6fc;
+  --main-background-color: #fffffe;
   --main-background-alternative-color: #e0fbfc;
   --code-background-color: #e9ecef;
   --code-font-color: #000;
@@ -13000,7 +13000,7 @@ readers do not read off random characters that represent icons */
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  width: 75vw;
+  width: 60vw;
   padding: 2em;
   border-top: 1px solid var(--blue);
   color: #000;

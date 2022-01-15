@@ -14,7 +14,7 @@ Jag har skapat denna sidan som projektuppgift i delkursen design inom distanskur
 Till vardags jobbar jag på en byggentreprenör nyproduktion bostäder. Annars uppskattar jag skidåkning, terränglöpning, styrketräning, och självklart programmering.
 <br><br>
 
-![Storulvån 2020](%assets_url%/img/me.png "Storulvån"){.pic}
+![Storulvån 2020](image/me.png?save-as=jpg&h=600&W=600&q=85 "Storulvån"){.pic}
 
 <br><br>
 

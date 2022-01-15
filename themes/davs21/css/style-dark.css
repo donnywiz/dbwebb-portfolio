@@ -5,9 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -407,10 +404,11 @@ a:visited {
   color: var(--body-link-decoration);
 }
 #nav a:hover {
+  color: var(--accent-link-color);
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: var(--body-link-decoration);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
 }
 
 a:hover {
@@ -442,7 +440,8 @@ a:hover {
 
 .nav {
   display: flex;
-  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.2px;
 }
 
 .main {
@@ -455,7 +454,7 @@ a:hover {
 
 .content {
   align-items: flex-start;
-  width: 65%;
+  width: 45vw;
 }
 
 .content img {
@@ -12941,12 +12940,13 @@ Variables and colors for dark theme.
   --body-font-color: #d2d2d2;
   --body-link: var(--spring-frost);
   --body-link-decoration: var(--spring-frost);
+  --accent-link-color: var(--spring-frost);
   /* header */
   /* main */
   --main-font-color: #d2d2d2;
   --main-font-alternative-color: #fff;
   --main-accent-color: var(--spring-frost);
-  --main-background-color: #1f1b24;
+  --main-background-color: #25282c;
   --main-background-alternative-color: #e0fbfc;
   --code-background-color: #121212;
   --code-font-color: #d2d2d2;
@@ -12994,9 +12994,34 @@ Variables and colors for dark theme.
 }
 
 .footer {
-  padding: 2em;
-  background-color: var(--footer-background-color);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
   color: var(--footer-link-color);
+  background-color: var(--main-background-color);
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  border-top: 1px solid var(--ivory);
+  width: 60vw;
+  padding: 2em;
+  color: #000;
+}
+
+.footer-text {
+  display: flex;
+  color: var(--ivory);
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  width: 100vw;
+  color: var(--main-font-color);
 }
 
 body {

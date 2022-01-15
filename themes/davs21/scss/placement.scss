@@ -23,10 +23,11 @@ a:visited {
     }
 
     a:hover {
+        color: var(--accent-link-color);
         text-decoration-line: underline;
         text-decoration-style: solid;
         text-decoration-color: var(--body-link-decoration);
-        text-decoration-thickness: 2px;
+        text-decoration-thickness: 1px;
     }
 }
 
@@ -59,7 +60,8 @@ a:hover {
 
 .nav {
     display: flex;
-    font-weight: 600;
+    text-transform: lowercase;
+    letter-spacing: 0.2px;
 }
 
 .main {
@@ -72,7 +74,7 @@ a:hover {
 
 .content {
     align-items: flex-start;
-    width: 65%;
+    width: 45vw;
 }
 
 .content img {
